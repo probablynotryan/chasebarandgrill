@@ -1,8 +1,7 @@
 import "./App.css";
-import Services from "./components/Services.jsx";
+import Menu from "./components/Menu.jsx";
 import Contact from "./components/Contact.jsx";
 import Break from "./components/Break.jsx";
-import Jobs from "./components/Jobs.jsx";
 import About from "./components/About.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer";
@@ -14,11 +13,8 @@ export default function App() {
     case "/":
       Component = About;
       break;
-    case "/services":
-      Component = Services;
-      break;
-    case "/jobs":
-      Component = Jobs;
+    case "/menu":
+      Component = Menu;
       break;
     case "/contact":
       Component = Contact;
@@ -31,7 +27,7 @@ export default function App() {
   }
 
   return (
-    <div className="bg-white h-screen text-white">
+    <div className="bg-white h-screen text-black">
       <Navbar />
       <Break />
       <Component />
