@@ -37,9 +37,9 @@ function About() {
                 paddingTop: "18%",
                 paddingBottom: "2px",
               }}
-              className="relative font-roboto text-white text-center align-middle"
+              className="relative font-roboto text-white text-center"
             >
-              Where friends, food and fun{" "}
+              Where food, fun and friends{" "}
               <span className="text-amber-200">meet</span>.
             </div>
             <div className="text-center pt-2 ">

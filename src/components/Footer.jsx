@@ -1,14 +1,15 @@
 export default function Footer() {
   return (
     <>
-      <div className="pt-2 text-center text-sm  h-full bg-prestige flex justify-between">
+      <div className="pt-2 text-center text-sm  h-full text-white bg-black flex justify-between">
         <div></div>
         <div>
-          Located in the Hazel Dell Towne Center
+          1083 Monmouth St
           <br />
-          8802 NE 5th Ave <br />
-          Suite 109 <br />
-          Vancouver, WA 98665 <br />
+          Independence, OR 97351
+          <br />
+          <br />
+          Phone number, blah blah blah
         </div>
         <div></div>
       </div>
