@@ -5,7 +5,7 @@ import CompanyLogo from "../img/chaselogo.png";
 const navigation = [
   { name: "Menu", href: "/menu", current: false },
   { name: "Weekly Events", href: "/contactus", current: false },
-  { name: "About Us", href: "/apply", current: false },
+  { name: "About", href: "/apply", current: false },
   { name: "Contact Us", href: "/information", current: false },
 ];
 
@@ -18,7 +18,7 @@ export default function Example() {
     <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-02 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-02 sm:px-5 lg:px-8">
             <div className="relative flex h-18 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
@@ -31,21 +31,23 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex flex-1 items-right justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-16 w-auto lg:hidden"
-                    src={CompanyLogo}
-                    alt="Chase Bar & Grill"
-                  />
-                  <img
-                    className="hidden h-16 w-auto lg:block"
-                    src={CompanyLogo}
-                    alt="Chase Bar & Grill"
-                  />
+                  <a href="/">
+                    <img
+                      className="block h-16 py-1 w-auto lg:hidden"
+                      src={CompanyLogo}
+                      alt="Chase Bar & Grill"
+                    />
+                    <img
+                      className="hidden h-16 py-1 w-auto lg:block"
+                      src={CompanyLogo}
+                      alt="Chase Bar & Grill"
+                    />
+                  </a>
                 </div>
-                <div className="hidden sm:ml-12 sm:block">
-                  <div className="relative -left-6 flex space-x-0">
+                <div className="hidden pt-3 w-full sm:ml-12 sm:block">
+                  <div className="relative justify-end flex space-x-3">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -54,7 +56,7 @@ export default function Example() {
                           item.current
                             ? "bg-gray-900 text-white"
                             : "text-black hover:bg-prestige hover:text-white",
-                          "px-3 py-6 rounded-md text-md font-medium font-arial"
+                          "border-2 px-3 py-1 rounded-md text-md font-medium font-arial"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
