@@ -4,9 +4,9 @@ import CompanyLogo from "../img/chaselogo.png";
 
 const navigation = [
   { name: "Menu", href: "/menu", current: false },
-  { name: "Weekly Events", href: "/contactus", current: false },
-  { name: "About", href: "/apply", current: false },
-  { name: "Contact Us", href: "/information", current: false },
+  { name: "Events", href: "/contactus", current: false },
+  { name: "About Us", href: "/apply", current: false },
+  { name: "Contact", href: "/information", current: false },
 ];
 
 function classNames(...classes) {
@@ -35,19 +35,22 @@ export default function Example() {
                 <div className="flex flex-shrink-0 items-center">
                   <a href="/">
                     <img
-                      className="block h-16 py-1 w-auto lg:hidden"
+                      className="block h-24 px-4 py-1 w-auto lg:hidden"
                       src={CompanyLogo}
                       alt="Chase Bar & Grill"
                     />
                     <img
-                      className="hidden h-16 py-1 w-auto lg:block"
+                      className="hidden h-24 py-1 px-4 w-auto lg:block"
                       src={CompanyLogo}
                       alt="Chase Bar & Grill"
                     />
                   </a>
                 </div>
-                <div className="hidden pt-3 w-full sm:ml-12 sm:block">
-                  <div className="relative justify-end flex space-x-3">
+                <div
+                  style={{ paddingRight: "5%" }}
+                  className="hidden pt-3 w-full sm:ml-12 sm:block"
+                >
+                  <div className="relative justify-end flex py-4 space-x-3">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -55,8 +58,8 @@ export default function Example() {
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
-                            : "text-black hover:bg-prestige hover:text-white",
-                          "border-2 px-3 py-1 rounded-md text-md font-medium font-arial"
+                            : "text-black hover:bg-gray-900 hover:text-white",
+                          "px-3 py-2 rounded-md text-2xl font-medium font-teko"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -79,7 +82,7 @@ export default function Example() {
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
-                      : "text-black hover:bg-gray-700 hover:text-white",
+                      : "text-black hover:bg-gray-900 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
