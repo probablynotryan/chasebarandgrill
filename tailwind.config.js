@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["'Roboto'", "cursive"],
+        teko: ["Teko", "sans-serif"],
       },
       colors: {
         prestige: "#1a2044",
