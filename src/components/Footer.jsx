@@ -1,8 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="pt-2 text-center text-sm  h-full text-white bg-black flex justify-between">
-        <div></div>
+      <div className="pt-2 text-center text-md  h-32 text-white bg-black">
         <div>
           1083 Monmouth St
           <br />
@@ -11,7 +10,6 @@ export default function Footer() {
           <br />
           Phone number, blah blah blah
         </div>
-        <div></div>
       </div>
     </>
   );
