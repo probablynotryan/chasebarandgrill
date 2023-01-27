@@ -29,7 +29,7 @@ function About() {
         >
           <div
             style={{ left: "12.5%", top: "12.5%", width: "75%", height: "75%" }}
-            className="relative bg-opacity-60 bg-black"
+            className="relative bg-opacity-80 bg-black"
           >
             <div
               style={{
@@ -39,10 +39,10 @@ function About() {
               }}
               className="relative font-roboto text-white text-center"
             >
-              Where food, fun and friends{" "}
+              Where food, fun, and friends{" "}
               <span className="text-amber-200">meet</span>.
             </div>
-            <div className="text-center pt-2 ">
+            <div className="text-center pt-5 ">
               <button
                 style={{ fontSize: "2vw" }}
                 className="hover:bg-slate-900 text-white font-bold py-2 px-4 border-solid border border-gray-400 rounded"
