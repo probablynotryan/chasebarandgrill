@@ -1,8 +1,6 @@
-# Company Landing Page Version 0.3
+# Chase Bar & Chase Site
 
 ### Written in ReactJS & Tailwind
-
-A clone of the landing page for a  popular ROI for mortgage brokers, fixing window scaling issues and switching images to be legal to use.
 
 ![demo picture](./src/img/demo.png)
 
@@ -15,7 +13,7 @@ A clone of the landing page for a  popular ROI for mortgage brokers, fixing wind
 
 ### Future Goals / Plans
 
-- To create a form that's either sent to broker's email, or sent to a backend portal that multiple mlo's can login to (more closely emulating original)
-- Build more pages that use protected wordage (per industry)
+- Add backend for client to be able to update 'AboutPanel' subcomponent (tiles)
+- Build out pages
 
 #### by probablynotryan
