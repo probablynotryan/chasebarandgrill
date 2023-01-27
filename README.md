@@ -1,4 +1,4 @@
-# Chase Bar & Chase Site
+# Chase Bar & Grill Site
 
 ### Written in ReactJS & Tailwind
 
